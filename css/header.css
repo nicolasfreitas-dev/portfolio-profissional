@@ -1,0 +1,39 @@
+.cabecalho, #cabecalho-nav, #cabecalho-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    height: 10vh;
+}
+
+#cabecalho-img {
+    margin-left: 56px;
+}
+
+#cabecalho-itens li {
+    margin-right: 30px;
+}
+
+#cabecalho-itens li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+#cabecalho-itens li a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--cor-detalhes);
+    text-decoration-thickness: 2px;
+}
+
+#cabecalho-btn i {
+    margin-right: 30px;
+    cursor: pointer;
+    padding: 12px;
+}

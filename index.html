@@ -5,42 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Freitas</title>
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/6ede5aa0cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="cabeçalho">
-        <nav class="sidebar">
-            <i class="fa-solid fa-bars"></i>
-        </nav>
-        <aside class="tema">
-            <i class="fa-solid fa-circle-half-stroke"></i>
-        </aside>
+    <header class="cabecalho">
+        <div id="cabecalho-img">
+            <img id="logotipo" src="" alt="LOGOTIPO">
+        </div>
+        <div id="cabecalho-nav">
+            <ul id="cabecalho-itens">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Tecnologias</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            <div id="cabecalho-btn">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+        </div>
     </header>
     <main class="container">
         <div class="main-home">
-            <div>
-                <h1 id="main-title">Nicolas <span id="title-detail">Freitas</span>
-                <div class="subtitle-layout">
-                    <h2 id="main-subtitle">Desenvolvedor Front-End</h2>
+            <div id="main-home-layout">
+                <h1 id="main-title">Nicolas Freitas</h1>
+                <h2 id="main-subtitle">Desenvolvedor <span id="main-subtitle-detail">Front</span>-End</h2>
+                <p id="main-text">Desenvolvendo aplicações Front-End escaláveis com grande experiência de usuário.</p>           
+                <div class="main-buttons">
+                    <button id="button-cv" >Download CV</button>
+                    <button class="button-social"><a href="https://github.com/nicolasfreitas-dev" rel="external" target="_blank"><i class="fa-brands fa-github"></i></a></button>
+                    <button class="button-social"><a href="https://www.linkedin.com/in/nicolasfreitas-dev/" rel="external" target="_blank"><i class="fa-brands fa-linkedin"></i></a></button>
+                    <button class="button-social"><a href="https://www.instagram.com/nicolasfreitas__/" rel="external" target="_blank"><i class="fa-brands fa-instagram"></i></a></button>
                 </div>
             </div>
-            <div>
-                <p id="main-text">Desenvolvendo aplicações Front-End escaláveis com grande experiência de usuário.</p>
-            </div>
-            <div class="main-buttons">
-                <button class="button-cv">Download CV</button>
-                <button class="button-contato">Entrar em contato</button>
-            </div>
         </div>
-        <p>Em construção...</p>
         <article class="main-about">
             <div class="about-text">
                 <h2>Sobre mim</h2>
                 <p>Olá! Eu sou Nicolas Freitas, Desenvolvedor Front-End e Cientista Ambiental pela Universidade Federal do Ceará (UFC), mas foi na área de tecnologia que encontrei minha vocação. Atualmente estou aprimorando meus conhecimentos em HTML, CSS, JavaScript. Em breve darei início aos meus estudos em frameworks, tanto de CSS, quanto JavaScript, visando sempre evoluir como programador e objetivando a entrada no mercado de trabalho.</p>
             </div>
-            <div class="img-about-position">
-                <img class="img-about" src="images/foto de perfil.jpg" alt="Foto de perfil">
-            </div>
+            <!-- <div class="img-about-position">
+                <img id="img-about" src="images/foto de perfil.jpg" alt="Foto de perfil">
+            </div> -->
         </article>
         <section class="main-techs">
                 <h2>Tecnologias</h2>
@@ -63,8 +73,6 @@
     <footer class="footer">
         <p>Copyright &copy 2024 Nicolas Freitas</p>
     </footer>
-
     <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/6ede5aa0cd.js" crossorigin="anonymous"></script>
 </body>
 </html>

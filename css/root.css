@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+/* CORES LAYOUT */
+    --cor-primaria: #242424;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #B3B3B3;
+    --cor-detalhes: #FF4900;
+
+/* FONTE */
+    --fonte-padrao: Poppins, sans-serif;
+}
