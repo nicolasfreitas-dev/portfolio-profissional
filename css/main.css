@@ -57,7 +57,6 @@ body{
     justify-content: flex-start;
     align-items: center;
     width: 50vw;
-    height: 10vh;
     margin-left: 50px;
 }
 
@@ -71,7 +70,7 @@ body{
     border-radius: 20px;
     border: solid 1px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 #button-cv:hover {
