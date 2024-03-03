@@ -12,17 +12,17 @@
     <script src="https://kit.fontawesome.com/6ede5aa0cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho" id="Header">
         <div id="cabecalho-img">
             <img id="logotipo" src="" alt="LOGOTIPO">
         </div>
         <div id="cabecalho-nav">
             <ul id="cabecalho-itens">
                 <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Tecnologias</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Tecnologias">Tecnologias</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
             </ul>
             <div id="cabecalho-btn">
                 <i class="fa-solid fa-moon"></i>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <article class="main-about">
+        <article class="main-about" id="Sobre">
             <div class="about-layout">
                 <h2 class="main-subtitle">Sobre mim<span class="dot-color">.</span></h2>
                 <p id="about-text">Olá! Me chamo Nicolas Freitas, Cientista Ambiental de formação e sempre trabalhei com organização, planejamento estratégico e solução de problemas. Esse são alguns dos diferenciais que levo para minha jornada como desenvolvedor, além das minhas habilidades técnicas. Atualmente desenvolvo sistemas com interfaces modernas, com foco em experiência de usuário, performance, responsividade e SEO.</p>
@@ -52,16 +52,43 @@
                 <img id="img-about" src="images/foto de perfil.jpg" alt="Foto de perfil">
             </div>
         </article>
-        <section class="main-techs">
+        <section class="main-techs" id="Tecnologias">
                 <h2 class="main-subtitle" id="main-techs-subtitle">Tecnologias<span class="dot-color">.</span></h2>
+                <div id="techs-icons">
+                    <div class="icons-layout">
+                        <img class="icons" src="./images/html-5-svgrepo-com.svg" alt="">
+                        <span class="icons-desc">HTML 5</span>
+                    </div>
+                    <div class="icons-layout">
+                        <img class="icons" src="./images/css-3-svgrepo-com.svg" alt="">
+                        <span class="icons-desc">CSS 3</span>
+                    </div>
+                    <div class="icons-layout">
+                        <img class="icons" src="./images/js-svgrepo-com.svg" alt="">
+                        <span class="icons-desc">Javascript</span>
+                    </div>
+                    <div class="icons-layout">
+                        <img class="icons" src="./images/react-1-logo-svgrepo-com.svg" alt="">
+                        <span class="icons-desc">React</span>
+                    </div>
+                    <div class="icons-layout">
+                        <img class="icons" src="./images/typescript-icon-svgrepo-com.svg" alt="">
+                        <span class="icons-desc">Typescript</span>
+                    </div>
+                    <div class="icons-layout">
+                        <img class="icons" src="./images/tailwind-svgrepo-com.svg" alt="">
+                        <span class="icons-desc">Tailwind</span>
+                    </div>
+                </div>
         </section>
-        <section class="main-projetos">
+        <section class="main-projetos" id="Projetos">
                 <h2 class="main-subtitle">Projetos<span class="dot-color">.</span></h2>
         </section>
-        <section class="main-contatos">
+        <section class="main-contato" id="Contato">
                 <h2 class="main-subtitle">Contato<span class="dot-color">.</span></h2>
-                <span><i class="fa-solid fa-arrow-up"></i></span>
-        </section>
+                
+            </section>
+            <span id="arrow-up"><a href="#Header"><i class="fa-solid fa-arrow-up"></a></i></span#arrow-up>
     </main>
     <footer class="footer">
         <p>Copyright &copy 2024 Nicolas Freitas</p>

@@ -28,7 +28,7 @@
 
 #cabecalho-itens li a:hover {
     color: var(--cor-primaria);
-    background-color: var(--cor-detalhes);
+    background-color: var(--cor-detalhe1);
     border-radius: 20px;
 }
 
@@ -40,6 +40,6 @@
 
 #cabecalho-btn i:hover {
     color: var(--cor-primaria);
-    background-color: var(--cor-detalhes);
+    background-color: var(--cor-detalhe1);
     border-radius: 50%;
 }
