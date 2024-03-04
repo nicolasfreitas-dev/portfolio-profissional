@@ -103,7 +103,7 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .about-layout {
@@ -152,20 +152,20 @@ body{
 
 .main-techs {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 #main-techs-subtitle {
-    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 #techs-icons {
     width: 100%;
-    height: 100%;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -199,6 +199,18 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+#main-projetos-subtitle {
+    margin-top: 30px;
+}
+
+
+
+
+
+#main-contato-subtitle {
+    margin-top: 30px;
 }
 
 #arrow-up {

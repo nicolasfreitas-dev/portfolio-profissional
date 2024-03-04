@@ -32,13 +32,13 @@
     border-radius: 20px;
 }
 
-#cabecalho-btn i {
+#tema-btn i {
     margin-right: 30px;
     cursor: pointer;
     padding: 12px;
 }
 
-#cabecalho-btn i:hover {
+#tema-btn i:hover {
     color: var(--cor-primaria);
     background-color: var(--cor-detalhe1);
     border-radius: 50%;
