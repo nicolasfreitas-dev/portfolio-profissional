@@ -20,7 +20,7 @@
 }
 
 #cabecalho-itens li a {
-    padding: 8px 20px;
+    padding: 8px 12px;
     color: var(--cor-secundaria);
     text-decoration: none;
     cursor: pointer;
