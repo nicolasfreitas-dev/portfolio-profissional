@@ -280,12 +280,13 @@ body{
     padding: 5px 10px;
     border: none;
     border-radius: 12px;
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-detalhe1);
     cursor: pointer;
 }
 
 .card-btn-deploy a {
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-weight: bold;
 }
 
 .main-contato {
@@ -301,6 +302,49 @@ body{
     margin-top: 90px;
 }
 
+#contato-form-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33vw;
+    height: 70vh;
+    gap: 8px;
+    background-color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contato-legenda {
+    display: flex;
+    align-self: flex-start;
+    margin: 20px 0px 0px 22px;
+}
+
+#contato-nome, #contato-email, #contato-texto {
+    width: 30vw;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#contato-nome, #contato-email {
+    height: 4vh;
+}
+
+#contato-btn {
+    width: 20vw;
+    height: 5vh;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--cor-detalhe1);
+    color: var(--cor-primaria);
+}
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -310,4 +354,5 @@ body{
     height: 5vh;
     color: var(--cor-primaria);
     background-color: var(--cor-detalhe1);  
+    font-size: 0.8rem;
 }
