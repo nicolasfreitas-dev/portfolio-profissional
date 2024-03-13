@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/6ede5aa0cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="cabecalho" id="Header">
+    <header id="cabecalho" id="Header">
         <div id="cabecalho-img">
             <img id="logotipo" src="" alt="LOGOTIPO">
         </div>
@@ -82,16 +82,102 @@
                 </div>
         </section>
         <section class="main-projetos" id="Projetos">
-                <h2 class="main-subtitle" id="main-projetos-subtitle">Projetos<span class="dot-color">.</span></h2>
-                <div>
-                    <div></div>
+            <h2 class="main-subtitle" id="main-projetos-subtitle">Projetos<span class="dot-color">.</span></h2>
+            <div id="projetos-layout">
+                    <div class="projetos-card">
+                        <img class="projetos-card-img" src="images/projeto-img.jpg" alt="">
+                        <div class="projetos-card-content">
+                            <h3 class="projetos-card-title">Projeto X</h3>
+                            <p class="projetos-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iusto perspiciatis illum pariatur saepe delectus recusandae modi est.</p>
+                            <div class="projetos-card-techs">
+                                <span class="card-techs">HTML</span>
+                                <span class="card-techs">CSS</span>
+                                <span class="card-techs">Javascript</span>
+                            </div>
+                            <div class="projetos-card-btn-deploy">
+                                <button class="card-btn-deploy"><a href="#">Deploy</a></button>
+                                <button class="card-btn-deploy"><a href="#">GitHub</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projetos-card">
+                        <img class="projetos-card-img" src="images/projeto-img.jpg" alt="">
+                        <div class="projetos-card-content">
+                            <h3 class="projetos-card-title">Projeto X</h3>
+                            <p class="projetos-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iusto perspiciatis illum pariatur saepe delectus recusandae modi est.</p>
+                            <div class="projetos-card-techs">
+                                <span class="card-techs">HTML</span>
+                                <span class="card-techs">CSS</span>
+                                <span class="card-techs">Javascript</span>
+                            </div>
+                            <div class="projetos-card-btn-deploy">
+                                <button class="card-btn-deploy"><a href="#">Deploy</a></button>
+                                <button class="card-btn-deploy"><a href="#">GitHub</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projetos-card">
+                        <img class="projetos-card-img" src="images/projeto-img.jpg" alt="">
+                        <div class="projetos-card-content">
+                            <h3 class="projetos-card-title">Projeto X</h3>
+                            <p class="projetos-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iusto perspiciatis illum pariatur saepe delectus recusandae modi est.</p>
+                            <div class="projetos-card-techs">
+                                <span class="card-techs">HTML</span>
+                                <span class="card-techs">CSS</span>
+                                <span class="card-techs">Javascript</span>
+                            </div>
+                            <div class="projetos-card-btn-deploy">
+                                <button class="card-btn-deploy"><a href="#">Deploy</a></button>
+                                <button class="card-btn-deploy"><a href="#">GitHub</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projetos-card">
+                        <img class="projetos-card-img" src="images/projeto-img.jpg" alt="">
+                        <div class="projetos-card-content">
+                            <h3 class="projetos-card-title">Projeto X</h3>
+                            <p class="projetos-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iusto perspiciatis illum pariatur saepe delectus recusandae modi est.</p>
+                            <div class="projetos-card-techs">
+                                <span class="card-techs">HTML</span>
+                                <span class="card-techs">CSS</span>
+                                <span class="card-techs">Javascript</span>
+                            </div>
+                            <div class="projetos-card-btn-deploy">
+                                <button class="card-btn-deploy"><a href="#">Deploy</a></button>
+                                <button class="card-btn-deploy"><a href="#">GitHub</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projetos-card">
+                        <img class="projetos-card-img" src="images/projeto-img.jpg" alt="">
+                        <div class="projetos-card-content">
+                            <h3 class="projetos-card-title">Projeto X</h3>
+                            <p class="projetos-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iusto perspiciatis illum pariatur saepe delectus recusandae modi est.</p>
+                            <div class="projetos-card-techs">
+                                <span class="card-techs">HTML</span>
+                                <span class="card-techs">CSS</span>
+                                <span class="card-techs">Javascript</span>
+                            </div>
+                            <div class="projetos-card-btn-deploy">
+                                <button class="card-btn-deploy"><a href="#">Deploy</a></button>
+                                <button class="card-btn-deploy"><a href="#">GitHub</a></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
         </section>
         <section class="main-contato" id="Contato">
                 <h2 class="main-subtitle" id="main-contato-subtitle">Contato<span class="dot-color">.</span></h2>
-                
+                <form id="contato-form-layout">
+                    <label class="contato-legenda" for="nome">Nome</label>
+                    <input id="contato-nome" type="text" name="nome">
+                    <label class="contato-legenda" for="email">E-mail</label>
+                    <input id="contato-email" type="email" name="email">
+                    <label class="contato-legenda" for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="contato-texto" cols="30" rows="10"></textarea>
+                    <button type="submit" id="contato-btn">Enviar</button>
+                </form>
             </section>
-            <span id="arrow-up"><a href="#Header"><i class="fa-solid fa-arrow-up"></a></i></span#arrow-up>
     </main>
     <footer class="footer">
         <p>Copyright &copy 2024 Nicolas Freitas</p>
