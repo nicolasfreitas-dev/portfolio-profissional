@@ -3,7 +3,18 @@ body{
     height: 100%;
     font-family: var(--fonte-padrao);
     font-size: 1rem;
+    color: var(--cor-secundaria);
     background-color: var(--cor-primaria);
+    transition: background 0.2s linear;
+}
+
+body.light {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+body.light .container .main-home #main-home-layout > #main-text {
+    color: var(--cor-terciaria);
 }
 
 .container {
@@ -35,10 +46,6 @@ body{
 
 #main-title {
     color: var(--cor-detalhe1);
-}
-
-#main-home-subtitle {
-    color: var(--cor-secundaria);
 }
 
 #main-home-subtitle-detail {
@@ -116,7 +123,6 @@ body{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--cor-secundaria);
 }
 
 .dot-color {
@@ -124,7 +130,6 @@ body{
 }
 
 #about-text {
-    color: var(--cor-secundaria);
     text-align: justify;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -187,7 +192,6 @@ body{
 }
 
 .icons-desc {
-    color: var(--cor-secundaria);
     font-size: 1rem;
 }
 
@@ -244,20 +248,23 @@ body{
     margin-bottom: 10px;
     font-size: 1rem;
     color: var(--cor-secundaria);
+
 }
 
 .projetos-card-text {
     font-size: 0.8rem;
     text-align: justify;
-    color: var(--cor-secundaria);
     line-height: 1.1;
     margin-bottom: 20px;
+    color: var(--cor-secundaria);
+
 }
 
 .projetos-card-techs {
     margin-bottom: 20px;
     font-size: 0.8rem;
     color: var(--cor-secundaria);
+
 }
 
 .card-techs {

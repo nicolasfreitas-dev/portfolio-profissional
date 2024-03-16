@@ -22,31 +22,69 @@
     margin-left: 56px;
 }
 
-#cabecalho-itens li {
+#cabecalho-itens a {
     margin-right: 30px;
 }
 
-#cabecalho-itens li a {
+#cabecalho-itens a {
     padding: 8px 12px;
     color: var(--cor-secundaria);
     text-decoration: none;
     cursor: pointer;
 }
 
-#cabecalho-itens li a:hover {
+#cabecalho-itens a:hover {
     color: var(--cor-primaria);
     background-color: var(--cor-detalhe1);
     border-radius: 20px;
 }
 
-#tema-btn i {
+#theme-container {
     margin-right: 30px;
     cursor: pointer;
     padding: 12px 16px;
 }
 
-#tema-btn i:hover {
-    color: var(--cor-primaria);
-    background-color: var(--cor-detalhe1);
-    border-radius: 50%;
+.toggle-theme {
+    opacity: 0;
+    position: absolute;
 }
+
+.label {
+    background-color: var(--cor-terciaria);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 20px;
+    width: 50px;
+}
+
+.label .ball {
+    background-color: var(--cor-secundaria);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    bottom: 2px;
+    height: 24px;
+    width: 24px;
+    transform: translateX(2px);
+    transition: transform 0.2s linear;
+}
+
+.toggle-theme:checked + .label .ball {
+    transform: translateX(31px);
+  }
+  
+  .fa-moon {
+    color: var(--cor-detalhe2);
+  }
+  
+  .fa-sun {
+    color: #FFB602;
+  }
