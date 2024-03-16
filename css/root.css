@@ -10,4 +10,7 @@
 
     /* FONTE */
     --fonte-padrao: Poppins, sans-serif;
+
+    /* LIGHT THEME*/
+    --bg-light: #F6F7F8;
 }
