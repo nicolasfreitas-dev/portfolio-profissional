@@ -229,7 +229,7 @@ body.light .container .main-home #main-home-layout > #main-text {
     width: 25vw;
     height: 55vh;
     border: 1px solid var(--cor-terciaria);
-    border-radius: 20px;
+    border-radius: 12px;
     background-color: var(--cor-primaria);
     overflow: hidden;
 }
@@ -265,8 +265,8 @@ body.light .container .main-home #main-home-layout > #main-text {
     line-height: 1.2;
     margin-bottom: 20px;
     color: var(--cor-secundaria);
-
-}
+    height: 80px;
+}   
 
 .projetos-card-techs {
     margin-bottom: 20px;
@@ -280,7 +280,7 @@ body.light .container .main-home #main-home-layout > #main-text {
     background-color: var(--cor-terciaria);
 }
 
-.projetos-card-btn-deploy {
+.projetos-card-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -288,7 +288,7 @@ body.light .container .main-home #main-home-layout > #main-text {
     gap: 10px;
 }
 
-.card-btn-deploy {
+.card-btn {
     width: 80px;
     padding: 5px 10px;
     border: none;
@@ -297,7 +297,7 @@ body.light .container .main-home #main-home-layout > #main-text {
     cursor: pointer;
 }
 
-.card-btn-deploy a {
+.card-btn a {
     color: var(--cor-primaria);
     font-weight: bold;
 }
@@ -326,7 +326,7 @@ body.light .container .main-home #main-home-layout > #main-text {
     color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     border: 1px solid var(--cor-terciaria);
-    border-radius: 5px;
+    border-radius: 12px;
     margin-top: 20px;
 }
 
