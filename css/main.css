@@ -17,11 +17,6 @@ body.light .container .main-home #main-home-layout > #main-text {
     color: var(--cor-terciaria);
 }
 
-body.light .container .main-projetos #wrapper {
-    color: var(--cor-secundaria);
-
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -278,6 +273,7 @@ body.light .container .main-projetos #wrapper {
 .projeto-tech {
     font-size: 0.8rem;
     padding: 2px 12px;
+    color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     border-radius: 5px;
     margin-right: 3px;
