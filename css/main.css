@@ -73,6 +73,9 @@ body.light .container .main-projetos #wrapper {
 }
 
 #button-cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--cor-primaria);
     font-size: 0.9rem;
     font-weight: bolder;
@@ -215,7 +218,7 @@ body.light .container .main-projetos #wrapper {
 }
 
 #wrapper {
-    max-width: 1300px;
+    max-width: 1100px;
     width: 100%;
     position: relative;
 }
@@ -237,11 +240,11 @@ body.light .container .main-projetos #wrapper {
 }
 
 #wrapper i:first-child {
-    left: -70px;
+    left: -22px;
 }
 
 #wrapper i:last-child {
-    right: -70px;
+    right: -22px;
 }
 
 #wrapper #carousel {
@@ -413,6 +416,9 @@ body.light .container .main-projetos #wrapper {
 }
 
 #contato-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20vw;
     height: 5vh;
     margin-top: 20px;
