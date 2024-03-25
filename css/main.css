@@ -5,7 +5,6 @@ body{
     font-size: 1rem;
     color: var(--cor-secundaria);
     background-color: var(--cor-primaria);
-    transition: background 0.2s linear;
     overflow-x: hidden;
 }
 
@@ -206,7 +205,7 @@ body.light .container .main-projetos #wrapper {
 
 .main-projetos {
     width: 100%;
-    height: 100vh;
+    height: 1300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -217,215 +216,105 @@ body.light .container .main-projetos #wrapper {
     margin: 90px 0px 0px 0px;
 }
 
-#wrapper {
-    max-width: 1100px;
+#projeto-container {
     width: 100%;
-    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 50px;
 }
 
-#wrapper i {
-    height: 50px;
-    width: 50px;
-    background-color: var(--cor-detalhe1);
-    color: var(--cor-primaria);
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    font-size: 1.25rem;
-    transform: translateY(-50%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+.projeto-line {
+    width: 80%;
+    border: 1px solid var(--cor-terciaria);
 }
 
-#wrapper i:first-child {
-    left: -22px;
+.projeto-layout-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
 }
 
-#wrapper i:last-child {
-    right: -22px;
+.projeto-img {
+    width: 500px;
+    height: 250px;
 }
 
-#wrapper #carousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: ((100% / 3) - 12px);
-    gap: 16px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+.projeto-img:hover {
+    transform: rotate(-2deg);
+    transition: all 0.3s ease;
 }
 
-#carousel {
+.projeto-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 500px;
+    height: 250px;
+    gap: 20px;
+}
+
+.projeto-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.projeto-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.projetos-tech-container {
+    width: 100%;
+}
+
+.projeto-tech {
+    font-size: 0.8rem;
+    padding: 2px 12px;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.projetos-btn-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    padding: 0px 35px;
+    justify-content: flex-start;
 }
 
-#carousel::-webkit-scrollbar {
-    display: none;
-}
-
-#carousel .no-transition {
-    scroll-behavior: auto;
-}
-
-#carousel .dragging {
-    scroll-behavior: auto;
-    scroll-snap-type: none;
-}
-
-#carousel .dragging .card {
-    cursor: grab;
-    user-select: none;
-}
-
-#carousel .card {
-    width: 300px;
-    height: 460px;
-    background-color: var(--cor-primaria);
-    border: 1px solid var(--cor-terciaria);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    cursor: pointer;
-    user-select: none;
-    scroll-snap-align: start;
-}
-
-.card .card-image-container .card-image {
-    width: 320px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: justify;
-    line-height: 1.2;
-}
-
-.card-content .card-title {
-    font-size: 1rem;
+.projetos-btn {
+    margin-right: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-detalhe1);
+    color: var(--cor-primaria);
     font-weight: bold;
-    margin: 10px 0px 10px 10px;
+    cursor: pointer;
 }
 
-.card-content .card-text {
-    font-size: 0.9rem;
-    margin: 0px 10px 10px 10px;
+.projetos-btn:hover {
+    background-color: #fd6123;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#more-projects {
+    color: var(--cor-detalhe1);
+    text-decoration: underline;
     
 }
 
-.card-content .card-tech-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 4px;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 40px;
-    margin: 0px 10px 10px 10px;
-}
+#more-projects:hover {
+    color: #fd6123;
 
-.card-content .card-tech {
-    padding: 2px 12px;
-    font-size: 0.8rem;
-    color: var(--cor-secundaria);
-    background-color: var(--cor-terciaria);
-    border-radius: 12px;
-}
-
-.card-content .card-btn-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 93%;
-    margin: 2px 10px 10px 10px;
-}
-
-.card-content .card-btn {
-    font-weight: bold;
-    padding: 4px 12px;
-    border: none;
-    border-radius: 12px;
-    color: var(--cor-primaria);
-    background-color: var(--cor-detalhe1);
-    cursor: pointer;
-}
-
-.card-content .card-btn:hover {
-    background-color: #cd3d04;
-}
-
-.main-contato {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#main-contato-subtitle {
-    margin-top: 90px;
-}
-
-#contato-form-layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 33vw;
-    height: 70vh;
-    gap: 8px;
-    color: var(--cor-secundaria);
-    background-color: var(--cor-terciaria);
-    border: 1px solid var(--cor-terciaria);
-    border-radius: 12px;
-    margin-top: 20px;
-}
-
-.contato-legenda {
-    display: flex;
-    align-self: flex-start;
-    margin: 20px 0px 0px 22px;
-}
-
-#contato-nome, #contato-email, #contato-texto {
-    width: 30vw;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-}
-
-#contato-nome, #contato-email {
-    height: 4vh;
-}
-
-#contato-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20vw;
-    height: 5vh;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: var(--cor-detalhe1);
-    color: var(--cor-primaria);
 }
